@@ -20,7 +20,7 @@ function introduction() {
         stagger: 0.2
     });
     tl.to("#intro", {
-        scale: 15,
+        scale: 20,
         display: "none",
         duration: 1
     });
