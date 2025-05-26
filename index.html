@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="intro">
+        <div id="one">Welcome to</div>
+        <div id="two">Dileep's calculator</div>
+    </div>
+    <main>
+        <div id="toogle" onclick="toogle()">
+            <div id="overlay"></div>
+            <div id="light"><i class="ri-sun-line"></i></div>
+            <div id="dark"><i class="ri-moon-clear-fill"></i></div>
+        </div>
+        <div id="display">
+            <div id="calculation"></div>
+            <div id="result"></div>
+        </div>
+        <div id="calc">
+            <button class="green" onclick="allClear()">AC</button>
+            <button class="green" onclick="plusMinus()">+/-</button>
+            <button class="green" onclick="addNumber(' % ')">%</button>
+            <button class="red" onclick="addNumber(' / ')">/</button>
+            <button class="white" onclick="addNumber(7)">7</button>
+            <button class="white" onclick="addNumber(8)">8</button>
+            <button class="white" onclick="addNumber(9)">9</button>
+            <button class="red" onclick="addNumber(' * ')">X</button>
+            <button class="white" onclick="addNumber(4)">4</button>
+            <button class="white" onclick="addNumber(5)">5</button>
+            <button class="white" onclick="addNumber(6)">6</button>
+            <button class="red" onclick="addNumber(' - ')">-</button>
+            <button class="white" onclick="addNumber(1)">1</button>
+            <button class="white" onclick="addNumber(2)">2</button>
+            <button class="white" onclick="addNumber(3)">3</button>
+            <button class="red" onclick="addNumber(' + ')">+</button>
+            <button class="white" onclick="deleteLastToken()"><i class="ri-arrow-go-back-line"></i></button>
+            <button class="white" onclick="addNumber(0)">0</button>
+            <button class="white" onclick="addNumber('.')">.</button>
+            <button class="red" onclick="calculate()">=</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
